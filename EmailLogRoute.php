@@ -36,7 +36,7 @@ class EmailLogRoute extends CEmailLogRoute
             $details[] = 'POST Data:' . "\r\n" . wordwrap(var_export($_POST, true), 70);
         }
         if (!empty($_COOKIE)) {
-            $details[] = wordwrap(var_export($request->cookies, true));
+            //$details[] = wordwrap(var_export($request->cookies, true));
             $details[] = 'COOKIE Data:' . "\r\n" . wordwrap(var_export($_COOKIE, true), 70);
         }
         if (!empty($_FILES)) {
